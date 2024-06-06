@@ -1,0 +1,100 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* COLOR FONDO */
+
+body{
+    background-color: rgb(135, 116, 192);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 10% 0;
+}
+
+.contentJuego{
+    background-color: rgba(0, 252, 29, 0.6);
+    width: 400px;
+    height: auto;
+    padding: 30px 15px;
+    border-radius: 8px;
+    flex-direction: column;
+    box-shadow: 5px 5px rgba(0,0,0,0.2);
+    
+}
+
+h1{
+    font-size: 40px;
+    margin: 10px 0;
+}
+h2, h3{
+    font-size: 13px;
+    margin: 10px 0;
+}
+h6{
+    font-size: 17px;
+    color: white;
+}
+.contentForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+form{
+    flex-direction: column;
+    width: 60%;
+    
+}
+
+.input{
+    margin: 10px 0;
+    height: 30px;
+    border-color: brown;
+}
+
+.btn{
+    width: 150px;
+    background-color: rgb(51, 150, 255);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-shadow: 5px 5px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+.btn_N{
+    width: 150px;
+    height: auto;
+    background-color: rgb(255, 184, 51);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-shadow: 5px 5px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: rgb(255, 187, 51);
+    color: black;
+}
+.btn_N:hover{
+    background-color: rgb(51, 255, 95);
+    color: black;
+}
+.box_text:focus{
+    background-color: rgb(223, 128, 83);
+}
+#mensaje{
+    
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
