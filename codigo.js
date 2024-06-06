@@ -14,7 +14,7 @@ let numAleatorio = Math.floor(Math.round(Math.random()*10 + 1));
     
     if(isNaN(numUsuario1) || numUsuario1< 1 || numUsuario1> 10)
         {
-            document.getElementById('mensaje').innerText = "NO Es un número Valido"
+            document.getElementById('mensaje').innerText = "NO Es un Dato Valido"
             return;
             
         }
