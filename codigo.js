@@ -15,6 +15,7 @@ let numAleatorio = Math.round(Math.random()*10);
     if(isNaN(numUsuario1) || numUsuario1< 1 || numUsuario1> 10)
         {
             document.getElementById('mensaje').innerText = "NO Es un número Valido"
+            return;
             
         }
        
