@@ -7,7 +7,7 @@ let numeroUsuario = document.getElementById('num').value;
 // convertir
 
 let numUsuario1 = Number(numeroUsuario);
-let numAleatorio = Math.round(Math.random()*10);
+let numAleatorio = Math.floor(Math.round(Math.random()*10 + 1));
 
 //let boton = document.getElementById('BTN');
 //boton.addEventListener('click',ver())
@@ -19,20 +19,21 @@ let numAleatorio = Math.round(Math.random()*10);
             
         }
        
-        else if (numAleatorio != numUsuario1)
+        if (numAleatorio === numUsuario1)
         {
-            if(numUsuario1> numAleatorio){
-                document.getElementById('mensaje').innerText = " El número digitado es mayor";
+            document.getElementById('mensaje').innerText = "😀 FELICIDADES - ADIVINASTE EL NÚMERO 😀"
+            
+            
+        }
+        
+        else if(numUsuario1> numAleatorio){
+            document.getElementById('mensaje').innerText = " El número digitado es mayor";
             }
             else{
                 document.getElementById('mensaje').innerText = " El número digitado es menor";
             }
             
-        }
         
-        else{
-            document.getElementById('mensaje').innerText = "😀 FELICIDADES - ADIVINASTE EL NÚMERO 😀"
-        }
 });
 
 function borrar(){
