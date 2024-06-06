@@ -12,14 +12,12 @@ let numAleatorio = Math.round(Math.random()*10);
 //let boton = document.getElementById('BTN');
 //boton.addEventListener('click',ver())
     
-    if(isNaN(numUsuario1))
+    if(isNaN(numUsuario1) || numUsuario1< 1 || numUsuario1> 10)
         {
-            document.getElementById('mensaje').innerText = "NO Es un número"
+            document.getElementById('mensaje').innerText = "NO Es un número Valido"
             
         }
-        else if(numUsuario1> 10){
-            document.getElementById('mensaje').innerText = "Error - El Número es mayor a 10"
-        }
+       
         else if (numAleatorio != numUsuario1)
         {
             if(numUsuario1> numAleatorio){
